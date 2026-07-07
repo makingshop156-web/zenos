@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>WFWorkflowActions</key>
+    <array>
+        <!-- Bật Focus Mode Gaming -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.mobilephone.voicemail</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>FocusMode</key>
+                <string>Gaming</string>
+                <key>WFBooleanState</key>
+                <true/>
+            </dict>
+        </dict>
+        <!-- Đặt độ sáng 85% -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.accessibility.SetBrightness</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>Brightness</key>
+                <real>0.85</real>
+            </dict>
+        </dict>
+        <!-- Tắt True Tone -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.accessibility.SetTrueTone</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>WFBooleanState</key>
+                <false/>
+            </dict>
+        </dict>
+        <!-- Giảm chuyển động -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.accessibility.ReduceMotion</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>WFBooleanState</key>
+                <true/>
+            </dict>
+        </dict>
+        <!-- Bật AssistiveTouch -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.accessibility.AssistiveTouch</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>WFBooleanState</key>
+                <true/>
+            </dict>
+        </dict>
+        <!-- Tối ưu thông báo (không làm phiền) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.preferences.DoNotDisturb</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>WFBooleanState</key>
+                <true/>
+            </dict>
+        </dict>
+    </array>
+    <key>WFWorkflowClientRelease</key>
+    <string>6</string>
+    <key>WFWorkflowIcon</key>
+    <dict>
+        <key>WFWorkflowIconGlyphNumber</key>
+        <integer>59584</integer>
+        <key>WFWorkflowIconImageData</key>
+        <data></data>
+        <key>WFWorkflowIconStartColor</key>
+        <integer>4260553215</integer>
+    </dict>
+    <key>WFWorkflowImportQuestions</key>
+    <array/>
+    <key>WFWorkflowInputContentItemClasses</key>
+    <array>
+        <string>WFAppContentItem</string>
+    </array>
+    <key>WFWorkflowMinimumClientVersion</key>
+    <integer>900</integer>
+    <key>WFWorkflowMinimumClientVersionString</key>
+    <string>900</string>
+    <key>WFWorkflowNoInputBehavior</key>
+    <dict>
+        <key>WFWorkflowNoInputBehavior</key>
+        <integer>0</integer>
+    </dict>
+    <key>WFWorkflowTypes</key>
+    <array>
+        <string>NCWidget</string>
+        <string>WatchKit</string>
+    </array>
+</dict>
+</plist>
