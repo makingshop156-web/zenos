@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>WFWorkflowActions</key>
+    <array>
+        <!-- 1. Game Mode iOS 18 ON -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.mobilephone.voicemail</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>GameMode</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 2. Focus Mode Gaming ON -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.focus.SetFocus</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>FocusName</key>
+                <string>Gaming</string>
+                <key>TurnOn</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 3. Airplane Mode ON -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.airplane.SetAirplaneMode</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 4. Bluetooth ON (cho tay cầm) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.bluetooth.SetBluetooth</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 5. Low Power Mode OFF (tắt để full hiệu năng) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.lowpower.SetLowPower</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <false/>
+            </dict>
+        </dict>
+
+        <!-- 6. Auto-Lock: Never (3 = Never) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.autolock.SetAutoLock</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>Value</key>
+                <integer>3</integer>
+            </dict>
+        </dict>
+
+        <!-- 7. True Tone OFF (giữ 120Hz ổn định) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.truetone.SetTrueTone</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <false/>
+            </dict>
+        </dict>
+
+        <!-- 8. Reduce White Point OFF (sáng hết cỡ) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.whitepoint.SetWhitePoint</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <false/>
+            </dict>
+        </dict>
+
+        <!-- 9. Raise to Wake OFF -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.raisetowake.SetRaiseToWake</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <false/>
+            </dict>
+        </dict>
+
+        <!-- 10. Background App Refresh OFF -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.backgroundrefresh.SetBackgroundRefresh</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <false/>
+            </dict>
+        </dict>
+
+        <!-- 11. Reduce Motion ON (UI nhanh hơn) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.reducemotion.SetReduceMotion</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 12. Brightness 90% -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.brightness.SetBrightness</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>Value</key>
+                <real>0.9</real>
+            </dict>
+        </dict>
+
+        <!-- 13. DND ON (chặn thông báo) -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.donotdisturb.SetDND</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 14. AssistiveTouch ON -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.assistivetouch.SetAssistiveTouch</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>On</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- 15. Thông báo hoàn tất -->
+        <dict>
+            <key>WFWorkflowActionIdentifier</key>
+            <string>com.apple.showalert.ShowAlert</string>
+            <key>WFWorkflowActionParameters</key>
+            <dict>
+                <key>Title</key>
+                <string>🚀 Game Boost ON</string>
+                <key>Message</key>
+                <string>Đã tối ưu toàn bộ hệ thống cho game!
+- Game Mode: BẬT
+- Focus Gaming: BẬT
+- Airplane Mode: BẬT
+- Bluetooth: BẬT
+- Low Power: TẮT
+- Auto-Lock: KHÔNG BAO GIỜ
+- 120Hz: ỔN ĐỊNH
+- Background Refresh: TẮT
+- Raise to Wake: TẮT
+- Reduce Motion: BẬT
+- DND: BẬT</string>
+            </dict>
+        </dict>
+
+    </array>
+    <key>WFWorkflowClientRelease</key>
+    <string>8</string>
+    <key>WFWorkflowIcon</key>
+    <dict>
+        <key>WFWorkflowIconGlyphNumber</key>
+        <integer>59584</integer>
+        <key>WFWorkflowIconStartColor</key>
+        <integer>4260553215</integer>
+    </dict>
+    <key>WFWorkflowImportQuestions</key>
+    <array/>
+    <key>WFWorkflowInputContentItemClasses</key>
+    <array>
+        <string>WFAppContentItem</string>
+    </array>
+    <key>WFWorkflowMinimumClientVersion</key>
+    <integer>900</integer>
+    <key>WFWorkflowMinimumClientVersionString</key>
+    <string>900</string>
+    <key>WFWorkflowNoInputBehavior</key>
+    <int>0</int>
+    <key>WFWorkflowTypes</key>
+    <array>
+        <string>NCWidget</string>
+        <string>WatchKit</string>
+    </array>
+</dict>
+</plist>
