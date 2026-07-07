@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+
+        <!-- ===== 1. WEBCLIP ===== -->
+        <dict>
+            <key>FullScreen</key>
+            <true/>
+            <key>Icon</key>
+            <data>
+            <!-- PNG icon base64 (1x1 transparent pixel placeholder - thay bằng icon thật nếu muốn) -->
+            iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==
+            </data>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>🚀 Game Booster</string>
+            <key>PayloadDescription</key>
+            <string>Bảng điều khiển tối ưu game iOS 18</string>
+            <key>PayloadDisplayName</key>
+            <string>Game Booster WebClip</string>
+            <key>PayloadIdentifier</key>
+            <string>com.gamebooster.webclip.payload</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEE0001</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <false/>
+            <key>URL</key>
+            <string>https://tenban.github.io/ios-booster/index.html</string>
+        </dict>
+
+        <!-- ===== 2. DNS GAMING ===== -->
+        <dict>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>1.1.1.1</string>
+                    <string>1.0.0.1</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://cloudflare-dns.com/dns-query</string>
+            </dict>
+            <key>PayloadDescription</key>
+            <string>DNS Cloudflare giảm ping, chặn quảng cáo</string>
+            <key>PayloadDisplayName</key>
+            <string>DNS Gaming</string>
+            <key>PayloadIdentifier</key>
+            <string>com.gamebooster.dns.payload</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEE0002</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+
+        <!-- ===== 3. BLOCK TELEMETRY ===== -->
+        <dict>
+            <key>PayloadDescription</key>
+            <string>Chặn Apple Analytics giảm CPU, hạ nhiệt</string>
+            <key>PayloadDisplayName</key>
+            <string>Block Telemetry Apple</string>
+            <key>PayloadIdentifier</key>
+            <string>com.gamebooster.telemetry.payload</string>
+            <key>PayloadType</key>
+            <string>com.apple.configuration.proxy</string>
+            <key>PayloadUUID</key>
+            <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEE0003</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Proxies</key>
+            <dict>
+                <key>BlockedHosts</key>
+                <array>
+                    <string>*.ls.apple.com</string>
+                    <string>*.metrics.apple.com</string>
+                    <string>*.guzzoni.apple.com</string>
+                    <string>*.app-analytics.com</string>
+                    <string>*.app-analytics.events</string>
+                    <string>*.ca-app-ping.com</string>
+                    <string>*.weather-analytics-events.apple.com</string>
+                    <string>*.apple.com/analytics</string>
+                    <string>*/analytics/*</string>
+                    <string>*/diagnostics/*</string>
+                    <string>*/telemetry/*</string>
+                    <string>*/configuration/*</string>
+                    <string>*.crashlytics.com</string>
+                    <string>*.appflyer.com</string>
+                </array>
+            </dict>
+        </dict>
+
+        <!-- ===== 4. CHẶN QUẢNG CÁO (HOSTS) ===== -->
+        <dict>
+            <key>PayloadDescription</key>
+            <string>Chặn quảng cáo trong game và ứng dụng</string>
+            <key>PayloadDisplayName</key>
+            <string>Block Ads</string>
+            <key>PayloadIdentifier</key>
+            <string>com.gamebooster.ads.payload</string>
+            <key>PayloadType</key>
+            <string>com.apple.configuration.proxy</string>
+            <key>PayloadUUID</key>
+            <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEE0004</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Proxies</key>
+            <dict>
+                <key>BlockedHosts</key>
+                <array>
+                    <string>*.doubleclick.net</string>
+                    <string>*.googlesyndication.com</string>
+                    <string>*.googleadservices.com</string>
+                    <string>*.google-analytics.com</string>
+                    <string>*.googletagmanager.com</string>
+                    <string>*.facebook.com/tr</string>
+                    <string>*.scorecardresearch.com</string>
+                    <string>*.hotjar.com</string>
+                    <string>*.newrelic.com</string>
+                    <string>*.bugsnag.com</string>
+                    <string>*.adjust.com</string>
+                    <string>*.applovin.com</string>
+                    <string>*.unity3d.com/ads</string>
+                    <string>*.vungle.com</string>
+                    <string>*.chartboost.com</string>
+                </array>
+            </dict>
+        </dict>
+
+    </array>
+
+    <key>PayloadDescription</key>
+    <string>All-in-One: WebClip điều khiển + DNS Gaming + Chặn Telemetry + Chặn Quảng Cáo. Giúp máy mát, mạng mượt, pin lâu khi chơi game.</string>
+
+    <key>PayloadDisplayName</key>
+    <string>🚀 Game Booster All-in-One</string>
+
+    <key>PayloadIdentifier</key>
+    <string>com.gamebooster.allinone</string>
+
+    <key>PayloadOrganization</key>
+    <string>iOS Game Booster Pro</string>
+
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+
+    <key>PayloadType</key>
+    <string>Configuration</string>
+
+    <key>PayloadUUID</key>
+    <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEE0000</string>
+
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
